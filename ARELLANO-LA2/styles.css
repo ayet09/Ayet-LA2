@@ -1,0 +1,41 @@
+body {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: #fdf6ff; color: #333;}
+
+header {background: linear-gradient(135deg, #faf9c0, #fad0c4); color: #333; text-align: center; padding: 40px 20px;}
+.header-top {display: flex; justify-content: space-between; padding: 0 40px; font-weight: 500;}
+.header-center h1 { margin: 15px 0; font-size: 2.4em; color: #2d2d2d;}
+.header-center p {margin: 5px 0; font-weight: 500;}
+.header-nav {display: flex; justify-content: center; gap: 50px; margin-top: 50px;}
+.header-nav a {text-decoration: none; color: #2d2d2d; font-weight: 600; transition: 0.3s;}
+.header-nav a:hover {color: #faf9c0;}
+
+section {padding: 70px 20px;}
+
+#projects h2 {text-align: center; font-size: 2.2em; margin-bottom: 40px; color: #444;}
+.projects-container {display: grid; grid-template-columns: repeat(2, 1fr); gap: 25px; max-width: 800px; margin: auto;}
+.project-card {background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.08); transition: 0.3s; max-width: 350px; margin: auto;}
+.project-card:hover {transform: translateY(-5px);}
+.project-image {width: 100%; height: 170px; object-fit: contain; background: #f4f4f4; padding: 10px;}
+
+.description-holder {padding: 20px;}
+.description-holder strong {color: #ffcc00; font-size: 1.1em;}
+
+.article-button {display: block; margin: 15px auto 25px; padding: 10px 25px; border: none; background: #ffcc00; color: black; border-radius: 30px; cursor: pointer; transition: 0.3s;}
+.article-button:hover {background: #ffcc00;}
+
+footer {background: #faf9c0; color: #444; text-align: center; padding: 40px 20px;}
+footer a {color: #ffcc00; text-decoration: none; margin: 0 10px; font-weight: 600;}
+footer a:hover {text-decoration: underline;}
+
+#reserved {margin-top: 15px; font-size: 0.9em;}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .header-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+}
